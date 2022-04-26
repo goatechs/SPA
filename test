@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- This is the main template for the site, with index.jsx building the content and behavior -->
+    
+    <title>Hello React!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <script>
+      console.log('Target Global Settings triggered!');
+      window.targetGlobalSettings = {
+       timeout: 200, // using custom timeout
+       visitorApiTimeout: 500, // using custom API timeout
+       cookieDomain: "periwinkle-same-yam.glitch.me",
+       at_property: "8019958b-ecaa-f01c-f7cf-2cfdd91663e7",
+       enabled: true
+      };
+      console.log('host name:'+window.location.hostname);
+    </script>
+    <script src="https://assets.adobedtm.com/ae73688569bc/ee95e81f3d4e/launch-be0dd1c9d8a8.min.js" async></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
+  </body>
+</html>
